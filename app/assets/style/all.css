@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 0 48px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+.header {
+  background-color: #AA0601;
+  font-size: 20px;
+  line-height: 1.4;
+  padding: 30px 88px;
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 30px 39px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.header h1 a {
+  display: block;
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/logo.png");
+  background-position: center;
+  background-size: cover;
+  width: 80px;
+  height: 49px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .header h1 a {
+    max-width: 48px;
+    height: 29px;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .nav-menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+.header .nav-menu li {
+  margin-left: 64px;
+}
+
+.header .nav-menu li a {
+  padding: 8px 0;
+}
+
+@media (max-width: 992px) {
+  .header .nav-menu li {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .nav-menu li {
+    margin: 0;
+    padding: 10px 0;
+    width: 50%;
+    border: 1px solid #FFFFFF;
+  }
+  .header .nav-menu li:nth-child(odd) {
+    border-left: none;
+  }
+  .header .nav-menu li:nth-child(even) {
+    border-right: none;
+  }
+}
+
+.footer {
+  background: #AA0601;
+  line-height: 22px;
+}
+
+.footer .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .footer .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .footer-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.footer .footer-link {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 767px) {
+  .footer .footer-nav {
+    display: none;
+  }
+}
+
+.footer .footer-nav a {
+  padding: 8px 0;
+  margin-right: 48px;
+}
+
+@media (max-width: 992px) {
+  .footer .footer-nav a {
+    margin-right: 40px;
+  }
+}
+
+.footer .social-media li {
+  margin-left: 32px;
+}
+
+@media (max-width: 992px) {
+  .footer .social-media li {
+    margin-left: 24px;
+  }
+  .footer .social-media li img {
+    width: 24px;
+  }
+}
+
+.footer .footer-contact {
+  font-size: 36px;
+  line-height: 1.5;
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .footer .footer-contact {
+    font-size: 20px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .footer-contact {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+.footer .footer-contact li {
+  margin-bottom: 18px;
+}
+
+.footer .footer-contact li .tel-icon {
+  width: 42px;
+  margin-right: 18px;
+}
+
+@media (max-width: 992px) {
+  .footer .footer-contact li .tel-icon {
+    width: 28px;
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .footer-contact li .tel-icon {
+    width: 16px;
+    margin-right: 4px;
+  }
+}
+
+.footer .footer-contact li .mail-icon {
+  width: 48px;
+  margin-right: 12px;
+}
+
+@media (max-width: 992px) {
+  .footer .footer-contact li .mail-icon {
+    width: 32px;
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .footer-contact li .mail-icon {
+    width: 20px;
+    margin-right: 4px;
+  }
+}
+
+.footer .footer-contact .contact-item {
+  margin-bottom: 24px;
+}
+
+.footer .policy {
+  padding-top: 24px;
+  border-top: 1px solid #ffffff;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .footer .policy {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.footer .policy .copyright li {
+  line-height: 21px;
+}
+
+@media (max-width: 767px) {
+  .footer .policy .copyright li {
+    margin-bottom: 8px;
+  }
+}
+
+.footer .policy .copyright li img {
+  margin-right: 38px;
+}
+
+@media (max-width: 992px) {
+  .footer .policy .copyright li img {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .policy .copyright li img {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .policy .policy-link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 14px;
+  }
+}
+
+.footer .policy .policy-link li {
+  font-size: 14px;
+  line-height: 21px;
+  margin-left: 62px;
+}
+
+@media (max-width: 767px) {
+  .footer .policy .policy-link li {
+    margin-left: 0;
+    margin-bottom: 8px;
+  }
+}
+
+.banner {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 840px;
+}
+
+@media (max-width: 767px) {
+  .banner {
+    height: 394px;
+  }
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-primary-dark {
+  color: #650300;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+/*# sourceMappingURL=all.css.map */
